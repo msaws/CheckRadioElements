@@ -10,7 +10,7 @@ h1 {
 
 
 nav {   
-    background-color: rgba(11, 11, 11, 0.595);
+    background-color: rgba(164, 5, 5, 0.903);
     text-align: center;
     padding: 10px;
 }
@@ -20,21 +20,26 @@ nav a {
     padding: 15px 10px;
     margin: 0px 10px;
     color: white;
-    size: 2em;
+    font-size: 1.4em;
     display: inline-block;
     transition: background 0.5s ease-out;
+    border-radius: 5px;
 
-    };
+    }
 
 nav a:hover {
     color: black;
-    background-color: rgb(244, 219, 219);
+    background-color: rgb(229, 229, 229);
 }
 
 #main {
 
-    margin-left: 5%;
-    margin-right: 5%;;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 20px;
+    box-shadow: 5px 5px 15px gray;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.25em;
 }
 
 button {
@@ -45,4 +50,72 @@ button {
 p {
     margin-top: 25px;
     font-size: 1.5em;
+}
+
+footer {
+    background-color: rgb(164, 5, 5);
+    color: white;
+    padding: 40px 0;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-column h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #f4f4f4;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 8px 0;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 1em;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
+
+/* Footer Disclaimer */
+.footer-disclaimer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #bbb;
+}
+
+.footer-disclaimer p {
+    margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        margin: 20px 0;
+    }
 }
