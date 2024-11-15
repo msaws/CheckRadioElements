@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="topH1">Welcome to AMEX Bank</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html">Company</a>
+        <a href="index.html">Services</a>
+        <a href="index.html">Team</a>
+        <a href="index.html">Contact</a>
+    </nav>
+    <div id="main">
+        <h2>Your payments and Subscriptions!</h2>
+
+        <input type="checkbox" id="chkbox_subscribe">
+        <label>Subscribe to weekly newsletter.</label>
+
+        <h3>Please select your payment method.</h3>
+        <input type="radio" id="visa" name="paymentOption">
+        <label for="visa">Visa Card</label>
+        <br>
+
+        <input type="radio" id="master" name="paymentOption">
+        <label for="master">Master Card</label>
+        <br>
+
+        <input type="radio" id="paypal" name="paymentOption">
+        <label for="paypal">PayPal</label>
+        <br>
+
+        <input type="radio" id="amex" name="paymentOption">
+        <label  for="amex">AMEX</label>
+        <br><br>
+
+        <button type="submit" id="btnSubmit" onclick="chkPaymentOptions()">Submit</button>
+
+        <p id="output"></p>
+        <p id="output2"></p>
+    </div>
+
+
+
+    <footer>
+
+
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
